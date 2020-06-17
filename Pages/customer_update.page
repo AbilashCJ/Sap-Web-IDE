@@ -1,0 +1,45 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DemoSAPApp/Actions/closemodal_page.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Close",
+				"Visible": true
+			},
+			{
+				"OnPress": "/DemoSAPApp/Actions/save_customer_update.action",
+				"Position": "right",
+				"SystemItem": "Save",
+				"Text": "Save",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customer Update",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Last Name",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{LastName}",
+							"_Name": "FC Last Name",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "customer_update",
+	"_Type": "Page"
+}
