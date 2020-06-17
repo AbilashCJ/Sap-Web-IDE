@@ -1,0 +1,60 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DemoSAPApp/Actions/navigatetocust_update.action",
+				"Position": "right",
+				"SystemItem": "Edit",
+				"Text": "Edit",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customer_Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{EmailAddress}",
+						"Description": "{FirstName}",
+						"DetailImageIsCircular": false,
+						"Footnote": "{DateOfBirth}",
+						"HeadlineText": "{LastName}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Country",
+							"Value": "{{#Property:Customer/#Property:Country}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Address",
+							"Value": "{{#Property:Customer/#Property:HouseNumber}}{{#Property:Customer/#Property:Street}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customer_Details",
+	"_Type": "Page"
+}
